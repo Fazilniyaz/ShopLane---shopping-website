@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header">
+        <span id="head1">SHOP<span id="head2">LANE</span></span>
+        <a href="#cloth">CLOTHING</a>
+        <a href="#Access">ACCESSORIES</a>
+        <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+        <input id="dummy" type="text" placeholder="Search your product here">
+        <!-- <a href=""><i id="icon2" class="fa-sharp fa-solid fa-cart-shopping fa-2x"><div id="count"><p id="counter">0</p></div></i></a> -->
+        <img id="userimg" src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg" alt="" height="50" width="50">
+    </header>
+    <main id="main">
+        <div id="main-addToCart-container">
+            <h1>Checkout</h1>
+            <h2 style="margin-top: 2rem;margin-left: 1rem;">Total Items added in cart: <span id="totalItemCount"></span></h2>
+            <div id="addToCartDiv">
+                <div id="addToCartItems">
+                    
+                </div>
+                <div id="totalAmount">
+                    <h2>Total Amount:</h2>
+                    <h4>Amount: Rs <span id="addToCartTotalAmount"></span></h4>
+                    <a href="./order.html"><button type="button" id="placeOrder">Place Order</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./cart.js"></script>
+</body>
+</html>

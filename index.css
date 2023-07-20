@@ -1,0 +1,459 @@
+/* #009688 */
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,500&display=swap');
+
+/* https://garnet-massive-marmot.glitch.me/c3.png
+https://garnet-massive-marmot.glitch.me/c1.png */
+
+* {
+    padding: 0;
+    margin:0;
+    scroll-behavior: smooth;
+
+}
+
+#count{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 2rem;
+    background-color: #009688;
+    transform: translate(20px,-30px);
+}
+#counter{
+    font-size: xx-small;
+    transform: translate(6px,0px);
+}
+
+body{
+    overflow-x: hidden;
+    overflow-x: hidden;
+    font-family: 'Foldit', cursive;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    height:55px ;
+    position:fixed;
+    top: -1;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 1px 5px grey;
+    box-sizing: border-box;
+    z-index: 20;
+    background-color: #222322;
+    color: white;
+    
+}
+#head1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #009688;
+}
+
+#head2 {
+    font-size: xx-large;
+    font-weight: 300;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight:400;
+}
+
+#dummy{
+    width: 20%;
+    height: 35%;
+    background-color:gainsboro;
+    color: black;
+    border: 2px solid white;
+}
+
+#icon{
+    transform: translate(3rem,0rem);
+}
+#icon2{
+    transform: translate(0px,7px);
+}
+
+.slider{
+    transform: translate(0px,100px);
+    height: 20vw;
+    width: 100vw;
+    /* margin:auto; */
+}
+#img{
+    height: 30%;
+    width: 80%;
+    margin: 0% 10%;
+    /* display: none; */
+
+}
+#cloth,#Access{
+    width:95vw;
+    display:flex;
+    flex-direction: row;
+    /* padding:2rem; */
+    justify-content:center;
+    align-items: center;
+    margin-left: 2vw;
+    flex-wrap: wrap;
+
+}
+#brand{
+    font-size: 1rem;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    color: gray;
+    font-weight:400;
+    margin:0.5rem;
+}
+#name{
+    font-size: 1.1rem;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    color: black;
+    font-weight:400;
+    margin:0.5rem;
+}
+#price{
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-weight: 500;
+    margin: 0.5rem;
+    font-size:0.8rem;
+    letter-spacing: 0.4px;
+    color: #009688;
+
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidebtn{
+    height: 0.2rem;
+    width: 1rem;
+    margin: 10px;
+    border-radius: 10rem;
+
+}
+.slidebtn:hover{
+    background-color: gray;
+    cursor: pointer;
+
+}
+
+#first{
+    background-color: gray;
+}
+
+#second{
+    background-color: gainsboro;
+}
+#third{
+    background-color: gainsboro;
+}
+#headone ,#headtwo{
+    transform: translate(10px,0px);
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 400;
+    margin: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.card{
+    min-height:200px;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 25px 15px;
+}
+.pd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer{
+    min-height: 20vh;
+    width: 100%;
+    background-color: #303030;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+
+}
+
+.idea{
+    display: flex;
+    flex-direction: column;
+    margin:5rem;
+    cursor: pointer;
+
+}
+
+.footer-heading{
+    font-size: larger;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-link{
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width:1000px){
+    #dummy{
+        display: none;
+    }
+    
+    #footer{
+        display: none;
+    }
+
+    #icon{
+        display: none;
+    }
+    .slidebtn{
+        height: 0.4rem;
+        width: 0.7rem;
+
+    
+    }
+    #headone,#headtwo{
+        font-size: small;
+    }
+}
+#userimg{
+    border-radius: 2rem;
+}
+@media screen and (max-width:600px){
+    a {
+        
+        font-size: 0.8rem;
+        font-weight:400;
+    }
+    .idea{
+        display: flex;
+        flex-direction: column;
+        margin:1rem;
+        cursor: pointer;
+    
+    }
+    #footer{
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
+@media screen and (max-width:470px){
+    #head1 {
+        font-size:1.4rem;
+
+    }
+    
+    #head2 {
+        font-size:1.4rem;
+
+    }
+    #userimg{
+        height: 25px;
+        width: 25px;
+    }
+    .slidebtn{
+        height: 0.4rem;
+        width: 0.7rem;
+
+    
+    }
+    #img{
+        height: 40vw;
+    
+    }
+    
+    #footer{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+    #head1,#head2{
+        font-size:medium;
+    }
+    #headone,#headtwo{
+        font-size:xx-small;
+    }
+}
+
+@media screen and (max-width:1600px){
+    .card{
+        margin: 1rem;
+    }
+   
+}
+
+@media screen and (max-width:1000px){
+    #headone, #headtwo{
+        font-size: 1.8rem;
+    }
+   
+    
+    .idea{
+        display: flex;
+        flex-direction: column;
+        margin:2rem;
+        cursor: pointer;
+    
+    }
+    #footer{
+        height: 30vh;
+    }
+
+
+}
+
+
+#addToCardItem{
+    margin: 3rem;
+
+    box-shadow: 1px 1px 5px #b1a5a5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    /* box-sizing: border-box; */
+    align-items: center;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+    width: 75%;
+    /* padding:2rem ; */
+}
+
+/* h2{
+    margin-top: 2rem;
+    margin-left: 1rem;
+} */
+
+.checkoutItemImg{
+    width: 90%;
+    height: 11rem;
+}
+.noPerItem{
+    margin: 1rem;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#totalAmount{
+    margin: 3rem;
+    background-color: #303030;
+    color: aliceblue;
+    box-shadow: 1px 1px 5px #b1a5a5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* box-sizing: border-box; */
+    align-items:center;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+    width: 75%;
+}
+
+#clear{
+    margin-top: 2rem;
+}
+
+
+#placeOrder{
+    background-color: #009688;
+    color: aliceblue;
+    border: 1px solid #009688;
+    width: 8rem;
+    border-radius: 1rem;
+}
+
+
+@media(max-width:600px){
+    #placeOrder{
+        margin-top:1rem;
+    }
+}
+
+@media (max-width:500px){
+    #totalAmount{
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+
+    }
+}
+
+
+#circle{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10rem;
+    background-color: #009688;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    /* transform: translate(10rem,13rem); */
+}
+
+#exceed{
+    transform: translate(0%,100%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#placed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:450px){
+    #placed{
+        transform: translate(5rem,2rem);
+}
+
+}

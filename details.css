@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-x: hidden;
+    font-family: 'Foldit', cursive;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+#innerhead{
+    font-size: 2rem;
+
+
+}
+
+
+.others{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translate(0%,11%);
+    /* flex-direction: column; */
+    /* justify-content:space-between;
+    align-items:flex-start; */
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    height:55px ;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 1px 5px grey;
+    box-sizing: border-box;
+    z-index: 20;
+    background-color: #222322;
+    color: white;
+    
+}
+
+#addToCart{
+    background-color:#009688;
+    width:40%;
+    height:2.5rem;
+    color:white;
+    border-radius:3rem;
+}
+
+
+#count{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 2rem;
+    background-color: #009688;
+    transform: translate(20px,-30px);
+}
+#counter{
+    font-size: xx-small;
+    transform: translate(6px,0px);
+}
+
+#head1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #009688;
+}
+
+#head2 {
+    font-size: xx-large;
+    font-weight: 300;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight:400;
+}
+
+#dummy{
+    width: 20%;
+    height: 35%;
+    background-color:gainsboro;
+    color: black;
+    border: 2px solid white;
+}
+
+#prev{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid grey; */
+    padding: 1%;
+    flex-wrap: wrap;
+
+}
+
+.variety{
+    margin-right: 1%;
+}
+.variety:hover{
+    border: 2px solid #009688;
+}
+
+#icon{
+    transform: translate(3rem,0rem);
+}
+#icon2{
+    transform: translate(0px,7px);
+    color: aliceblue;
+}
+#displayimg{
+    margin-left: 0%;
+    width: 50%;
+    margin: 3rem;
+    border: 0.5px solid  #009688;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+
+    
+}
+
+#brand{
+    /* margin-top: 3; */
+    font-size: 1.3rem;
+}
+#price    {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #009688;
+}
+
+
+.image1{
+    margin-top: 2%;
+    width: 50%;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+@media screen and (max-width:1000px){
+    #dummy{
+        display: none;
+    }
+    
+    #icon{
+        display: none;
+    }
+    .slidebtn{
+        height: 0.4rem;
+        width: 0.7rem;
+
+    
+    }
+    #headone,#headtwo{
+        font-size: small;
+    }
+}
+#userimg{
+    border-radius: 2rem;
+}
+@media screen and (max-width:600px){
+    a {
+        
+        font-size: 0.8rem;
+        font-weight:400;
+    }
+    .idea{
+        display: flex;
+        flex-direction: column;
+        margin:1rem;
+        cursor: pointer;
+    
+    }
+    #footer{
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
+@media screen and (max-width:470px){
+    #head1 {
+        font-size:1.4rem;
+
+    }
+    
+    #head2 {
+        font-size:1.4rem;
+
+    }
+    
+
+    
+
+
+}
+
+
+@media screen and (max-width:500px){
+    #head1,#head2{
+        font-size:medium;
+    }
+    #headone,#headtwo{
+        font-size:xx-small;
+    }
+    .others{
+        transform: translate(0%,-2%);
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        flex-wrap: nowrap;
+        /* transform: translate(0%,11%); */
+    }
+    .atc{
+        width: 50%;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: baseline;
+    
+    }
+    .image1{
+        margin-top: 4%;
+        width: 90%;
+        padding-left: 10%;
+    }
+    #displayimg{
+        width: 60%;
+        /* margin: 3rem; */
+        border: 0.5px solid  #009688;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+    
+        
+    }
+    
+}
+
+
+
+@media screen and (max-width:1000px){
+    #headone, #headtwo{
+        font-size: 1.8rem;
+    }
+  
+
+}
+
+
